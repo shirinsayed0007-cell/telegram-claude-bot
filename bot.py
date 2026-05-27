@@ -12,7 +12,7 @@ bot = telebot.TeleBot(TELEGRAM_TOKEN)
 def handle_message(message):
     user_text = message.text
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model=claude-haiku-4-5-20251001
         max_tokens=1024,
         messages=[{"role": "user", "content": f"You are a witty sarcastic AI. Reply with clever humor. User said: {user_text}"}]
     )
